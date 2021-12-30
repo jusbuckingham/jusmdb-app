@@ -10,5 +10,7 @@ render() {
         <div>
         </div>
       );
+    }
+  }
 
 export default Tvshows;
