@@ -29,11 +29,13 @@ componentDidMount() {
 
 displayActors() {
     const display = this.state.data.map((a, idx) => {
-        return <Actors
+        return <ActorsContainer
             key={idx}
-            name={a.name}
-            origin={a.origin}
-            quote={a.quote}
+            actor={a.actor}
+            born={a.born}
+            work={a.work}
+            image_url={a.image_url}
+            bio={a.bio}
         />
     });
     console.log(this.state.data);
@@ -44,7 +46,7 @@ render() {
     return (
         <div>
           <div>
-                {/* {this.displayActors()} */}
+                {this.displayActors()}
                 <div>
         <div className="navbar is-inline-flex is-transparent">
           <div className="navbar-brand">
@@ -85,8 +87,8 @@ render() {
         </div>
         <div className="columns body-columns">
           <div className="column is-half is-offset-one-quarter">
-            {this.displayAnimes()}
-            {displayCharacters}
+            {this.displayActors()}
+            
 
 
             <div className="card">
