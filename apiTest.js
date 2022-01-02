@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-axios.get('https://movie-database-imdb-alternative.p.rapidapi.com/')
+axios.get('http://localhost:3000/movies')
         .then((response) => {
             console.log(response.data)
             

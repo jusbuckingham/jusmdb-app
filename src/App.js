@@ -9,7 +9,7 @@ import {
 
 // Components
 import Top from "./components/Top"
-import ActorsContainer from "./components/ActorsContainer";
+import Actors from "./components/Actors";
 import Movies from "./components/Movies";
 import Tvshows from "./components/Tvshows";
 
@@ -19,7 +19,7 @@ class App extends Component {
       <Router>
         <div>
           <Routes>
-            <Route exact path="/" element={<ActorsContainer />} />
+            <Route exact path="/" element={<Actors />} />
             <Route path="/top" element={<Top />} />
             <Route path="/movies" element={<Movies />} />
             <Route path="/tvshows" element={<Tvshows />} />
