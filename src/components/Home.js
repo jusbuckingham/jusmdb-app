@@ -8,7 +8,7 @@ class Home extends Component {
 render() {
     return (
         <div>
-          <h1>Home On The Range</h1>
+          <h1>Welcome to jusMDB</h1>
           
         </div>
       );

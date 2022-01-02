@@ -17,7 +17,7 @@ componentDidMount() {
         .then((response) => {
             console.log(response.data);
             this.setState({
-                data: response.data.actorsArray,
+                data: response.data.quoteArray,
             });
         })
         .catch((error) => {
@@ -29,6 +29,7 @@ displayActors() {
     const display = this.state.data.map((a, idx) => {
         return <Actors
             key={idx}
+            url={a.url}
             actor={a.actor}
             born={a.born}
             work={a.work}
@@ -43,7 +44,8 @@ displayActors() {
 render() {
     return (
         <div>
-          <h1>Actors {this.displayActors()}</h1>
+          <h1>Actors</h1>
+          <h2>{this.displayActors()}</h2>
         </div>
       );
     }
