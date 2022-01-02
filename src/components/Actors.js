@@ -9,13 +9,13 @@ class Actors extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      character: "Gohan",
+      actor: "Denzel Washington",
       likes: 1,
       message: "",
       comments: [
         {
-          message: "This is my favorite anime",
-          username: "@romebell",
+          message: "This is my favorite actor",
+          username: "@birdsntranes",
           date: String(new Date()),
         },
       ],
@@ -23,9 +23,9 @@ class Actors extends Component {
   }
 
 
-  handleCharacter() {
+  handleActor() {
     this.setState({
-      character: "Goku",
+      actor: "Denzel Washington",
     });
   }
 
@@ -52,7 +52,7 @@ class Actors extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     let commentValue = this.state.message;
-    let username = "@romebell";
+    let username = "@birdsntranes";
     let newComment = {
       message: commentValue,
       username,
@@ -143,7 +143,7 @@ class Actors extends Component {
             <br />
             <time dateTime="2018-1-1">{this.props.date}</time>
             <button onClick={this.handleCharacter.bind(this)}>
-              Update Character
+              Update Actor
             </button>
           </div>
         </div>
