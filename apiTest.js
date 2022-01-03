@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-axios.get('http://localhost:3000/movies')
+axios.get('http://localhost:3000/actors')
         .then((response) => {
             console.log(response.data)
             
