@@ -47,7 +47,6 @@ class Actors extends Component {
 		return (
 			<div>
 
-
 				<nav className="navbar is-white topNav">
 					<div className="container">
 						<div className="navbar-brand">
@@ -132,7 +131,7 @@ class Actors extends Component {
 											<div className="content">
 												<p>
 													<a href="#">@rockieloved</a> replied 34 minutes ago &nbsp;
-													<span className="tag">{this.props.actor}</span>
+													<span className="tag">Question</span>
 												</p>
 											</div>
 										</div>
