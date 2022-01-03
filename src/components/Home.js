@@ -81,13 +81,10 @@ render() {
 							Tags
 						</p>
 						<ul className="menu-list">
-							<li><span className="tag is-primary is-medium ">Dashboard</span></li>
-							<li><span className="tag is-link is-medium ">Customers</span></li>
-							<li><span className="tag is-light is-danger is-medium ">Authentication</span></li>
-							<li><span className="tag is-dark is-medium ">Payments</span></li>
-							<li><span className="tag is-success is-medium ">Transfers</span></li>
-							<li><span className="tag is-warning is-medium ">Balance</span></li>
-							<li><span className="tag is-medium ">Question</span></li>
+							<li><span className="tag is-primary is-medium ">Drama</span></li>
+							<li><span className="tag is-link is-medium ">Comedy</span></li>
+							<li><span className="tag is-light is-danger is-medium ">Musical</span></li>
+							
 						</ul>
 					</aside>
 				</div>
